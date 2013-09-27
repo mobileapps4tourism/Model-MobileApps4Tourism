@@ -1,0 +1,69 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.eclipse.org/uml2/4.0.0/UML')]
+
+[template public generateElement(aClass : Class)]
+[comment @main/]
+[comment generate the AppDelegate.h file/]
+[file (aClass.name +'AppDelegate.h', false, 'UTF-8')]
+
+#import <UIKit/UIKit.h>
+
+@interface [aClass.name/]AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end
+
+[/file]
+
+[comment generate the AppDelegate.m file/]
+[file (aClass.name +'AppDelegate.m', false, 'UTF-8')]
+
+#import "[aClass.name/]AppDelegate.h"
+#import "MainViewController.h"
+
+@implementation [aClass.name/]AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = ['['/]['['/]UIWindow alloc[']'/] initWithFrame:['['/]['['/]UIScreen mainScreen[']'/] bounds[']'/][']'/];
+    // Override point for customization after application launch.
+    self.window.backgroundColor = ['['/]UIColor whiteColor[']'/];
+    MainViewController *mainViewController = ['['/]['['/]MainViewController alloc[']'/] init[']'/];
+    self.window.rootViewController = mainViewController;
+    ['['/]self.window makeKeyAndVisible[']'/];
+    return YES;
+
+}
+
+@end
+
+[/file]
+
+[comment generate the MainViewController.h file/]
+[file ('MainViewController.h', false, 'UTF-8')]
+
+#import <UIKit/UIKit.h>
+
+@interface MainViewController : UIViewController
+
+@end
+
+[/file]
+
+[comment generate the MainViewController.m file/]
+[file ('MainViewController.m', false, 'UTF-8')]
+
+#import "MainViewController.h"
+
+@interface MainViewController ()
+
+@end
+
+@implementation MainViewController
+
+@end
+
+[/file]
+
+[/template]
