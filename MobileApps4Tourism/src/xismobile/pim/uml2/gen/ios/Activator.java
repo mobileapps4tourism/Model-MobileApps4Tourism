@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package MobileApps4Tourism;
+package xismobile.pim.uml2.gen.ios;
 
 import org.eclipse.core.runtime.Plugin;
 import org.osgi.framework.BundleContext;

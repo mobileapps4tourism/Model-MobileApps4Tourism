@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package MobileApps4Tourism.main;
+package xismobile.pim.uml2.gen.ios.main;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,20 +29,20 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
  *
  * @generated
  */
-public class Generate extends AbstractAcceleoGenerator {
+public class Uml2objc extends AbstractAcceleoGenerator {
     /**
      * The name of the module.
      *
      * @generated
      */
-    public static final String MODULE_FILE_NAME = "/MobileApps4Tourism/main/generate";
+    public static final String MODULE_FILE_NAME = "/xismobile/pim/uml2/gen/ios/main/uml2objc";
     
     /**
      * The name of the templates that are to be generated.
      *
      * @generated
      */
-    public static final String[] TEMPLATE_NAMES = { "generateElement" };
+    public static final String[] TEMPLATE_NAMES = { "uml2objc" };
     
     /**
      * The list of properties files from the launch parameters (Launch configuration).
@@ -65,7 +65,7 @@ public class Generate extends AbstractAcceleoGenerator {
      *
      * @generated
      */
-    public Generate() {
+    public Uml2objc() {
         // Empty implementation
     }
 
@@ -85,7 +85,7 @@ public class Generate extends AbstractAcceleoGenerator {
      *             the model cannot be loaded.
      * @generated
      */
-    public Generate(URI modelURI, File targetFolder,
+    public Uml2objc(URI modelURI, File targetFolder,
             List<? extends Object> arguments) throws IOException {
         initialize(modelURI, targetFolder, arguments);
     }
@@ -106,7 +106,7 @@ public class Generate extends AbstractAcceleoGenerator {
      *             This can be thrown in two scenarios : the module cannot be found, or it cannot be loaded.
      * @generated
      */
-    public Generate(EObject model, File targetFolder,
+    public Uml2objc(EObject model, File targetFolder,
             List<? extends Object> arguments) throws IOException {
         initialize(model, targetFolder, arguments);
     }
@@ -141,7 +141,7 @@ public class Generate extends AbstractAcceleoGenerator {
                  * add in "arguments" this "String" attribute.
                  */
                 
-                Generate generator = new Generate(modelURI, folder, arguments);
+                Uml2objc generator = new Uml2objc(modelURI, folder, arguments);
                 
                 /*
                  * Add the properties from the launch arguments.

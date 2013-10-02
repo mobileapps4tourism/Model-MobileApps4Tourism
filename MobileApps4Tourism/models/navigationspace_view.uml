@@ -35,7 +35,7 @@
       <appliedProfile xmi:type="uml:Profile" href="../../XIS-Mobile/model.profile.uml#_EUKFkB9vEeOZ6al_I843SA"/>
     </profileApplication>
   </uml:Model>
-  <XISMobile:XisInteractionSpace xmi:id="_PRxsoCdlEeONOI6oRGvXyQ" base_Class="_JnTdICdlEeONOI6oRGvXyQ"/>
+  <XISMobile:XisInteractionSpace xmi:id="_PRxsoCdlEeONOI6oRGvXyQ" isMainScreen="true" base_Class="_JnTdICdlEeONOI6oRGvXyQ"/>
   <XISMobile:XisInteractionSpace xmi:id="_VheJECdlEeONOI6oRGvXyQ" base_Class="_S9eiUCdlEeONOI6oRGvXyQ"/>
   <XISMobile:XisNavigationAssociation xmi:id="_jpUNgCdlEeONOI6oRGvXyQ" base_Association="_Y1SqQCdlEeONOI6oRGvXyQ"/>
   <XISMobile:XisNavigationAssociation xmi:id="_xaHD4CdlEeONOI6oRGvXyQ" base_Association="_qQTvoCdlEeONOI6oRGvXyQ"/>

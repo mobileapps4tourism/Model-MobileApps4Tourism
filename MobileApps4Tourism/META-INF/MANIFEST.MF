@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Acceleo MobileApps4Tourism Module Runtime Plug-in
 Bundle-SymbolicName: MobileApps4Tourism
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: MobileApps4Tourism.Activator
+Bundle-Activator: xismobile.pim.uml2.gen.ios.Activator
 Bundle-Vendor: Eclipse Modeling Project
 Require-Bundle: org.eclipse.core.runtime, 
  org.eclipse.uml2.uml, 
@@ -20,5 +20,5 @@ Require-Bundle: org.eclipse.core.runtime,
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
-Export-Package: MobileApps4Tourism.main
+Export-Package: xismobile.pim.uml2.gen.ios.main
 

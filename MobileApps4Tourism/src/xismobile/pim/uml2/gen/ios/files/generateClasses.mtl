@@ -1,0 +1,15 @@
+[comment encoding = UTF-8 /]
+[module generateClasses('http://www.eclipse.org/uml2/4.0.0/UML')]
+
+
+[template public generateClasses(aClass : Class)]
+
+[file (aClass.name+'.m', false, 'UTF-8')]
+
+Class definitions
+
+CLass [aClass.name/]
+
+
+[/file]
+[/template]
