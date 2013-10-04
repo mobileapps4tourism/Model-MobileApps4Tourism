@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:XISMobile="http:///schemas/XISMobile/_x1lTUCqkEeO0NO7XUj3EBQ/3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/XISMobile/_x1lTUCqkEeO0NO7XUj3EBQ/3 model.profile.uml#_x1pkwCqkEeO0NO7XUj3EBQ">
-  <uml:Model xmi:id="_pXiLACdZEeONOI6oRGvXyQ" name="domain_view">
+  <uml:Model xmi:id="_pXiLACdZEeONOI6oRGvXyQ" name="MobileApps4Tourism">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_pXiLASdZEeONOI6oRGvXyQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_Cr5QQCtBEeOtC6jJdIHqmw" name="Attraction">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_82GS0CtGEeOtC6jJdIHqmw" name="title" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_82GS0CtGEeOtC6jJdIHqmw" name="name" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9fvswCtGEeOtC6jJdIHqmw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9gX-4CtGEeOtC6jJdIHqmw" value="1"/>
@@ -13,7 +13,7 @@
           <value xsi:nil="true"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="__iBGgCtGEeOtC6jJdIHqmw" name="imagepath" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__iBGgCtGEeOtC6jJdIHqmw" name="image" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__x9nACtGEeOtC6jJdIHqmw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__yGw8CtGEeOtC6jJdIHqmw" value="1"/>
@@ -21,12 +21,10 @@
           <value xsi:nil="true"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_2SAeQCtHEeOtC6jJdIHqmw" name="detail_association" type="_540CUCtGEeOtC6jJdIHqmw" aggregation="composite" association="_2SXqoCtHEeOtC6jJdIHqmw">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2SAeQCtHEeOtC6jJdIHqmw" name="detail_association" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2SAeQStHEeOtC6jJdIHqmw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2SAeQitHEeOtC6jJdIHqmw" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_540CUCtGEeOtC6jJdIHqmw" name="Detail">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_owy8ACtHEeOtC6jJdIHqmw" name="description" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pQqH0CtHEeOtC6jJdIHqmw" value="1"/>
@@ -35,20 +33,6 @@
           <value xsi:nil="true"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_uvr8UCtHEeOtC6jJdIHqmw" name="imagepath" visibility="public">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vImLkCtHEeOtC6jJdIHqmw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vIs5QCtHEeOtC6jJdIHqmw" value="1"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_vI-mECtHEeOtC6jJdIHqmw">
-          <value xsi:nil="true"/>
-        </defaultValue>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_2SXqoCtHEeOtC6jJdIHqmw" name="attraction_detail_association" memberEnd="_2SXqoStHEeOtC6jJdIHqmw _2SAeQCtHEeOtC6jJdIHqmw">
-      <ownedEnd xmi:type="uml:Property" xmi:id="_2SXqoStHEeOtC6jJdIHqmw" name="attraction_association" type="_Cr5QQCtBEeOtC6jJdIHqmw" association="_2SXqoCtHEeOtC6jJdIHqmw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2SXqoitHEeOtC6jJdIHqmw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2SXqoytHEeOtC6jJdIHqmw" value="1"/>
-      </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8bwu8CtAEeOtC6jJdIHqmw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8cE4ACtAEeOtC6jJdIHqmw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -58,10 +42,8 @@
     </profileApplication>
   </uml:Model>
   <XISMobile:XisEntity xmi:id="_D0WtICtBEeOtC6jJdIHqmw" base_Class="_Cr5QQCtBEeOtC6jJdIHqmw"/>
-  <XISMobile:XisEntity xmi:id="_7avvICtGEeOtC6jJdIHqmw" base_Class="_540CUCtGEeOtC6jJdIHqmw"/>
-  <XISMobile:XisEntityAttribute xmi:id="_-YkyMCtGEeOtC6jJdIHqmw" base_Property="_82GS0CtGEeOtC6jJdIHqmw"/>
-  <XISMobile:XisEntityAttribute xmi:id="_CCamsCtHEeOtC6jJdIHqmw" base_Property="__iBGgCtGEeOtC6jJdIHqmw"/>
-  <XISMobile:XisEntityAttribute xmi:id="_s3S3UCtHEeOtC6jJdIHqmw" base_Property="_owy8ACtHEeOtC6jJdIHqmw"/>
-  <XISMobile:XisEntityAttribute xmi:id="_0XG30CtHEeOtC6jJdIHqmw" base_Property="_uvr8UCtHEeOtC6jJdIHqmw"/>
-  <XISMobile:XisEntityAssociation xmi:id="_5XDjoCtHEeOtC6jJdIHqmw" base_Association="_2SXqoCtHEeOtC6jJdIHqmw"/>
+  <XISMobile:XisEntityAttribute xmi:id="_-YkyMCtGEeOtC6jJdIHqmw" type="String" base_Property="_82GS0CtGEeOtC6jJdIHqmw"/>
+  <XISMobile:XisEntityAttribute xmi:id="_CCamsCtHEeOtC6jJdIHqmw" type="Time" base_Property="__iBGgCtGEeOtC6jJdIHqmw"/>
+  <XISMobile:XisEntityAttribute xmi:id="_s3S3UCtHEeOtC6jJdIHqmw" type="String" base_Property="_owy8ACtHEeOtC6jJdIHqmw"/>
+  <XISMobile:XisEntityAssociation xmi:id="_5XDjoCtHEeOtC6jJdIHqmw"/>
 </xmi:XMI>

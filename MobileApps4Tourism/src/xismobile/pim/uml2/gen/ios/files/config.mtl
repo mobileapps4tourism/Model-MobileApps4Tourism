@@ -1,0 +1,48 @@
+[comment encoding = UTF-8 /]
+
+[module config('http://www.eclipse.org/uml2/4.0.0/UML')]
+
+[template public generateConfigFiles(m : Model)]
+
+[m.generateAppDelegate()/]
+
+[/template]
+
+[template private generateAppDelegate(m : Model)]
+
+[file (m.name + 'AppDelegate.h', false, 'UTF-8')]
+
+#import <UIKit/UIKit.h>
+#import "MainViewController.h"
+@interface [m.name/]AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic,retain) UINavigationController *navigationController;
+
+@end
+
+[/file]
+
+[file (m.name + 'AppDelegate.m', false, 'UTF-8')]
+
+#import "[m.name/]AppDelegate.h"
+
+@implementation [m.name/]AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = ['['/]['['/]UIWindow alloc[']'/] initWithFrame:['['/]['['/]UIScreen mainScreen[']'/] bounds[']'/][']'/];
+    // Override point for customization after application launch.
+    self.window.backgroundColor = ['['/]UIColor whiteColor[']'/];
+    MainViewController *mainViewController = ['['/]['['/]MainViewController alloc[']'/] init[']'/];
+	self.window.rootViewController = mainViewController;
+   	self.navigationController = ['['/]['['/]UINavigationController alloc[']'/]initWithRootViewController:mainViewController[']'/];
+    ['['/]self.window setRootViewController:self.navigationController[']'/];
+   ['['/]self.window makeKeyAndVisible[']'/];
+    return YES;
+}
+@end
+[/file]
+
+[/template]
+

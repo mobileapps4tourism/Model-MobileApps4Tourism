@@ -5,11 +5,11 @@
 [import xismobile::pim::uml2::gen::ios::files::generateClasses/]
 
 [template public domain2objc(m : Model)]
-
 [let entities : OrderedSet(Class) = m.getAllXisEntities()]
 [for (c : Class | entities)]
 	[c.generateClasses()/]
+	[c.generateMainViewController()/]
+	[c.generateDetailView()/]
 [/for]
-[comment]--[m.ownedElement->selectByType(Class).getAppliedStereotypes().name->sep('\n')/]--[/comment]
 [/let]
 [/template]

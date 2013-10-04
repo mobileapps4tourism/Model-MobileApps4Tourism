@@ -4,82 +4,14 @@
 [import xismobile::pim::uml2::gen::ios::common::xisMobileUtils/]
 [import xismobile::pim::uml2::gen::ios::common::utils/]
 [import xismobile::pim::uml2::gen::ios::main::domain2objc/]
+[import xismobile::pim::uml2::gen::ios::files::config/]
 
 [template public uml2objc(m : Model)]
 [comment @main/]
 
 [m.domain2objc()/]
-
+[m.generateConfigFiles()/]
 
 [/template]
 
 
-[comment][file (c.name+'ViewController.h', false, 'UTF-8')]
-
-#import <UIKit/UIKit.h>
-
-@interface [c.name/]ViewController : UIViewController
-
-@end
-
-[/file]
-
-[file (c.name+'ViewController.m', false, 'UTF-8')]
-
-#import "[c.name/]ViewController.h"
-
-@interface [c.name/]ViewController ()
-
-
-@end
-
-@implementation [c.name/]ViewController
-
-@end
-
-[/file]
-
-[/for]
-
-[file ('MobileApps4TourismAppDelegate.h', false, 'UTF-8')]
-
-#import <UIKit/UIKit.h>
-@interface MobileApps4TourismAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-@end
-
-[/file]
-
-[file ('MobileApps4TourismAppDelegate.m', false, 'UTF-8')]
-
-#import "MobileApps4TourismAppDelegate.h"
-
-[for (c : Class | entities)]
-#import "[c.name/]ViewController.h"
-[/for]
-
-@implementation MobileApps4TourismAppDelegate
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    self.window = ['['/]['['/]UIWindow alloc[']'/] initWithFrame:['['/]['['/]UIScreen mainScreen[']'/] bounds[']'/][']'/];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = ['['/]UIColor whiteColor[']'/];
-	[for (c: Class | entities)]
-    [c.name/]ViewController *[c.name/]ViewController = ['['/]['['/][c.name/]ViewController alloc[']'/] init[']'/];
-	[if (c.name = 'Attraction')]
-	self.window.rootViewController = [c.name/]ViewController;
-	[/if]
-	[/for]
-    ['['/]self.window makeKeyAndVisible[']'/];
-    return YES;
-
-}
-
-@end
-
-[/file]
-[/let]
-[/comment]
