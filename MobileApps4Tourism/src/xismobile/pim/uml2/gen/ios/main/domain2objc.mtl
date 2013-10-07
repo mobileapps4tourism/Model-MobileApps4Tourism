@@ -8,8 +8,6 @@
 [let entities : OrderedSet(Class) = m.getAllXisEntities()]
 [for (c : Class | entities)]
 	[c.generateClasses()/]
-	[c.generateMainViewController()/]
-	[c.generateDetailView()/]
 [/for]
 [/let]
 [/template]

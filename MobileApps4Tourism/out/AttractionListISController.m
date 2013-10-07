@@ -1,13 +1,11 @@
+		
+#import "AttractionListISController.h"
 
-#import "MainViewController.h"
-#import "DetailViewController.h"
-#import "Attraction.h"
-
-@interface MainViewController ()
+@interface AttractionListISController ()
 
 @end
 
-@implementation MainViewController
+@implementation AttractionListISController
 
 - (void)viewDidLoad
 {
@@ -77,9 +75,9 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    DetailViewController *detailView = [[DetailViewController alloc] init];
-    detailView.attraction = [self.attractionsArray objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:detailView animated:YES];
+    ViewDetailsISController *viewDetailsISController = [[ViewDetailsISController alloc] init];
+    viewDetailsISController.attraction = [self.attractionsArray objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:ViewDetailsISController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

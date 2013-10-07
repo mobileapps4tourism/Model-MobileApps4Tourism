@@ -1,12 +1,11 @@
-#import "DetailViewController.h"
-#import "Attraction.h"
+#import "ViewDetailsISController.h"
 #import "QuartzCore/QuartzCore.h"
 
-@interface DetailViewController ()
+@interface ViewDetailsISController ()
 
 @end
 
-@implementation DetailViewController
+@implementation ViewDetailsISController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

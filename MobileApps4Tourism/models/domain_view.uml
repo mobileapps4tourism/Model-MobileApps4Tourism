@@ -14,7 +14,7 @@
         </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="__iBGgCtGEeOtC6jJdIHqmw" name="image" visibility="public">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__x9nACtGEeOtC6jJdIHqmw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__yGw8CtGEeOtC6jJdIHqmw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="__ygZkCtGEeOtC6jJdIHqmw">
@@ -34,6 +34,58 @@
         </defaultValue>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_deQC8lEeOFx9aoLJx8Cw" name="AttractionListIS">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_aI6EQC8mEeOFx9aoLJx8Cw" name="navigationBar" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a15tIC8mEeOFx9aoLJx8Cw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a2Aa0C8mEeOFx9aoLJx8Cw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_a2Q5gC8mEeOFx9aoLJx8Cw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_q0htAC8mEeOFx9aoLJx8Cw" name="image" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rFYMcC8mEeOFx9aoLJx8Cw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rFeTEC8mEeOFx9aoLJx8Cw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_rFtjoC8mEeOFx9aoLJx8Cw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rVBK8C8mEeOFx9aoLJx8Cw" name="name" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_riFWkC8mEeOFx9aoLJx8Cw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_riLdMC8mEeOFx9aoLJx8Cw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_rij3sC8mEeOFx9aoLJx8Cw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qb8DUC8lEeOFx9aoLJx8Cw" name="ViewDetailsIS">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dQLXMC8mEeOFx9aoLJx8Cw" name="navigationBar" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dbuf4C8mEeOFx9aoLJx8Cw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_db1NkC8mEeOFx9aoLJx8Cw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_dcFsQC8mEeOFx9aoLJx8Cw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rrfxQC8mEeOFx9aoLJx8Cw" name="image" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sFMDoC8mEeOFx9aoLJx8Cw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sFSKQC8mEeOFx9aoLJx8Cw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_sFgMsC8mEeOFx9aoLJx8Cw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sfy8AC8mEeOFx9aoLJx8Cw" name="description" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t4zWUC8mEeOFx9aoLJx8Cw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t45c8C8mEeOFx9aoLJx8Cw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_t5HfYC8mEeOFx9aoLJx8Cw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8bwu8CtAEeOtC6jJdIHqmw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8cE4ACtAEeOtC6jJdIHqmw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="model.profile.uml#_x1pkwCqkEeO0NO7XUj3EBQ"/>
@@ -46,4 +98,12 @@
   <XISMobile:XisEntityAttribute xmi:id="_CCamsCtHEeOtC6jJdIHqmw" type="Time" base_Property="__iBGgCtGEeOtC6jJdIHqmw"/>
   <XISMobile:XisEntityAttribute xmi:id="_s3S3UCtHEeOtC6jJdIHqmw" type="String" base_Property="_owy8ACtHEeOtC6jJdIHqmw"/>
   <XISMobile:XisEntityAssociation xmi:id="_5XDjoCtHEeOtC6jJdIHqmw"/>
+  <XISMobile:XisInteractionSpace xmi:id="_Q3VLMC8mEeOFx9aoLJx8Cw" isMainScreen="true" base_Class="_o_deQC8lEeOFx9aoLJx8Cw"/>
+  <XISMobile:XisInteractionSpace xmi:id="_SDcZAC8mEeOFx9aoLJx8Cw" base_Class="_qb8DUC8lEeOFx9aoLJx8Cw"/>
+  <XISMobile:XisEntityAttribute xmi:id="_CfdRQC8nEeOFx9aoLJx8Cw" base_Property="_sfy8AC8mEeOFx9aoLJx8Cw"/>
+  <XISMobile:XisEntityAttribute xmi:id="_Dn3q0C8nEeOFx9aoLJx8Cw" type="Time" base_Property="_rrfxQC8mEeOFx9aoLJx8Cw"/>
+  <XISMobile:XisEntityAttribute xmi:id="_Enn3oC8nEeOFx9aoLJx8Cw" base_Property="_dQLXMC8mEeOFx9aoLJx8Cw"/>
+  <XISMobile:XisEntityAttribute xmi:id="_FfZ0MC8nEeOFx9aoLJx8Cw" base_Property="_aI6EQC8mEeOFx9aoLJx8Cw"/>
+  <XISMobile:XisEntityAttribute xmi:id="_GdXRQC8nEeOFx9aoLJx8Cw" type="Time" base_Property="_q0htAC8mEeOFx9aoLJx8Cw"/>
+  <XISMobile:XisEntityAttribute xmi:id="_Hj73wC8nEeOFx9aoLJx8Cw" base_Property="_rVBK8C8mEeOFx9aoLJx8Cw"/>
 </xmi:XMI>

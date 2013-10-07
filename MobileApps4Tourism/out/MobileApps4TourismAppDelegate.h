@@ -1,6 +1,7 @@
 
 #import <UIKit/UIKit.h>
-#import "MainViewController.h"
+#import "AttractionListISController.h"
+
 @interface MobileApps4TourismAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

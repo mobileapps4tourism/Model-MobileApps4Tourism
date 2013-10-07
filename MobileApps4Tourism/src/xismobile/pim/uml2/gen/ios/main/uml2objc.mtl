@@ -4,6 +4,7 @@
 [import xismobile::pim::uml2::gen::ios::common::xisMobileUtils/]
 [import xismobile::pim::uml2::gen::ios::common::utils/]
 [import xismobile::pim::uml2::gen::ios::main::domain2objc/]
+[import xismobile::pim::uml2::gen::ios::main::interaction2objc/]
 [import xismobile::pim::uml2::gen::ios::files::config/]
 
 [template public uml2objc(m : Model)]
@@ -11,6 +12,7 @@
 
 [m.domain2objc()/]
 [m.generateConfigFiles()/]
+[m.interaction2objc()/]
 
 [/template]
 
