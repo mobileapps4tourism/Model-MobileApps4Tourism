@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:XISMobile="http:///schemas/XISMobile/_x1lTUCqkEeO0NO7XUj3EBQ/3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/XISMobile/_x1lTUCqkEeO0NO7XUj3EBQ/3 model.profile.uml#_x1pkwCqkEeO0NO7XUj3EBQ">
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:XISMobile="http:///schemas/XISMobile/_x1lTUCqkEeO0NO7XUj3EBQ/3" xmlns:XISMobile_1="http:///schemas/XISMobile/_phk70DDxEeOAIuHwzcL-qg/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/XISMobile/_x1lTUCqkEeO0NO7XUj3EBQ/3 model.profile.uml#_x1pkwCqkEeO0NO7XUj3EBQ http:///schemas/XISMobile/_phk70DDxEeOAIuHwzcL-qg/5 model.profile.uml#_phqbYDDxEeOAIuHwzcL-qg">
   <uml:Model xmi:id="_pXiLACdZEeONOI6oRGvXyQ" name="MobileApps4Tourism">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_pXiLASdZEeONOI6oRGvXyQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -59,6 +59,7 @@
           <value xsi:nil="true"/>
         </defaultValue>
       </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_E1-d8DDuEeOAIuHwzcL-qg" name="Class1" visibility="package"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_qb8DUC8lEeOFx9aoLJx8Cw" name="ViewDetailsIS">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_dQLXMC8mEeOFx9aoLJx8Cw" name="navigationBar" visibility="public">
@@ -88,7 +89,7 @@
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8bwu8CtAEeOtC6jJdIHqmw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8cE4ACtAEeOtC6jJdIHqmw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="model.profile.uml#_x1pkwCqkEeO0NO7XUj3EBQ"/>
+        <references xmi:type="ecore:EPackage" href="model.profile.uml#_phqbYDDxEeOAIuHwzcL-qg"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="model.profile.uml#_EUKFkB9vEeOZ6al_I843SA"/>
     </profileApplication>
@@ -104,6 +105,9 @@
   <XISMobile:XisEntityAttribute xmi:id="_Dn3q0C8nEeOFx9aoLJx8Cw" type="Time" base_Property="_rrfxQC8mEeOFx9aoLJx8Cw"/>
   <XISMobile:XisEntityAttribute xmi:id="_Enn3oC8nEeOFx9aoLJx8Cw" base_Property="_dQLXMC8mEeOFx9aoLJx8Cw"/>
   <XISMobile:XisEntityAttribute xmi:id="_FfZ0MC8nEeOFx9aoLJx8Cw" base_Property="_aI6EQC8mEeOFx9aoLJx8Cw"/>
-  <XISMobile:XisEntityAttribute xmi:id="_GdXRQC8nEeOFx9aoLJx8Cw" type="Time" base_Property="_q0htAC8mEeOFx9aoLJx8Cw"/>
   <XISMobile:XisEntityAttribute xmi:id="_Hj73wC8nEeOFx9aoLJx8Cw" base_Property="_rVBK8C8mEeOFx9aoLJx8Cw"/>
+  <XISMobile:XisImage xmi:id="_G9zGEDDuEeOAIuHwzcL-qg" base_Class="_E1-d8DDuEeOAIuHwzcL-qg" path=""/>
+  <XISMobile_1:XisInteractionSpace xmi:id="_zFIdEDDuEeOAIuHwzcL-qg" base_Class="_o_deQC8lEeOFx9aoLJx8Cw"/>
+  <XISMobile_1:XisEntity xmi:id="_tYF6YDDxEeOAIuHwzcL-qg" base_Class="_Cr5QQCtBEeOtC6jJdIHqmw"/>
+  <XISMobile_1:XisEntityAttribute xmi:id="_wem_YDDxEeOAIuHwzcL-qg" type="Image" base_Property="__iBGgCtGEeOtC6jJdIHqmw"/>
 </xmi:XMI>
